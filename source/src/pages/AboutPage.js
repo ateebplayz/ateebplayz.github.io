@@ -29,7 +29,9 @@ function AboutPage() {
           As for programming, You can find my github page by clicking the button below. However most of my main repositories are private. So if you would like to hire/freelance, do hit me up on my discord @ Sunny.#7285
         </p>
         <div style={{ margin: '10px' }}>
-          <button className='App-btn' style={{ marginRight: '10px' }}>My Projects</button>
+          <Link to="/projects">
+            <button className='App-btn' style={{ marginRight: '10px' }}>My Projects</button>
+          </Link>
           <button className='github-button' onClick={() => window.open("https://github.com/ateebplayz", "_blank")}><FontAwesomeIcon icon={['fab', 'github']} style={{ marginRight: '5px' }} />My Git</button>
 		</div>
       </div>
