@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: mainFont;
+  src: url('../assets/fonts/Gaegu/Gaegu-Regular.ttf');
+}
+@font-face {
+  font-family: mainFontL;
+  src: url('../assets/fonts/Gaegu/Gaegu-Light.ttf');
+}
+@font-face {
+  font-family: mainFontB;
+  src: url('../assets/fonts/Gaegu/Gaegu-Bold.ttf');
+}
+
+@font-face {
+  font-family: Inter;
+  src: url('../assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf');
+}
