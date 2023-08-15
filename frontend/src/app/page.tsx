@@ -222,7 +222,7 @@ export default function Home() {
     <div className="transition bg-primary duration-500 ease-in-out flex flex-row md:flex-col">
       <div className="flex bg-primary h-screen md:min-h-screen py-10 sticky items-center justify-center w-4/12 md:w-full">
         <div className='flex bg-secondary h-5/6 md:min-h-screen md:mt-12 md:px-4 shadow-2xl fixed md:ml-8 md:mr-8 md:relative items-center justify-center flex-col w-3/12 md:w-full border-2 border-tertiary rounded-lg'>
-          <Image src={Me} width={160} height={160} alt="My Pic" className="rounded-full border-specialColor border-4 p-1"></Image>
+          <Image src='https://ateebplayz-github-io.pages.dev/assets/me.jpg' width={160} height={160} alt="My Pic" className="rounded-full border-specialColor border-4 p-1"></Image>
           <p className="font-mainFontB text-textPrimary mt-4 text-3xl">Ateeb Sohail</p>
           <p className="font-mainFont text-textPrimary text-xl">Full-Stack Web Developer</p>
           <div className="transition duration-500 ease-in-out flex flex-row mt-4 w-full flex-wrap justify-center items-center">
