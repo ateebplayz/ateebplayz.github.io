@@ -2,7 +2,7 @@
 const nextConfig = {
     output: 'export',
     images: {
-        domains: ['ateebplayz-github-io.pages.dev']
+        domains: ['ateebplayz-github-io.pages.dev', 'i.imgur.com']
     }
 }
 
