@@ -35,6 +35,64 @@ const skills = [
   { skill: 'Arduino', link: 'https://en.wikipedia.org/wiki/Arduino' },
   { skill: 'Minecraft Server', link: 'https://en.wikipedia.org/wiki/Minecraft_server' },
 ]
+interface InterestsProps {
+  name: string,
+  desc: string
+}
+const InterestComponent: React.FC<InterestsProps> = ({name, desc}) => {
+  return (
+    <div className="flex-2 w-5/12 md:w-5/6 bg-tertiary border-2 rounded m-4 border-specialColor p-4 flex flex-col">
+      <h1 className="text-specialColor text-4xl font-mainFontB md:text-center">{name}</h1>
+      <h1 className="text-textPrimary text-lg font-mainFontB md:text-center">{desc}</h1>
+    </div>
+  )
+}
+const Interests: InterestsProps[] = [
+  {
+    name: 'Frontend Website Development',
+    desc: "My Web Development journey was quite long. Beginning from simple Wordpress websites all the way up to fully complicated ThreeJS Websites. For some reason my first ever website was for my sister... And my most complicated one too. Though as soon I touched React.JS, it took a place in my heart."
+  },
+  {
+    name: 'Backend Development',
+    desc: "There was just something about API's and Library's that struck me hard. I just loved working with them and I loved solving different errors. Though I still hate getting rate-limited for my API Keys >:("
+  },
+  {
+    name: 'Discord Bot Development',
+    desc: "I know this isnt a HUGE interest or anything of the sort I mentioned before, but it's the thing that got me in Programming, and well, as they say 'Small things make Great Things'. (I don't know who says that)"
+  },
+  {
+    name: 'Robotics',
+    desc: "Ever since a workshop at my school, I've developed a certain interests in robotics. I did many experimental projects via Arduino and Rasberry Pi and presented them at my school's annual school year. It was incredibly challenging for me but I seemed to enjoy it."
+  },
+  {
+    name: 'Hacking',
+    desc: "I'm not the kind of hacker that you've seen in the matrix. I dont spam keys expecting to log into an FBI Agent's computer. I'm talking about Wi-FI Spoofing and Bluetooth Hacking which I learnt while using Black Arch & Kali Linux."
+  },
+  {
+    name: 'Declamations',
+    desc: "Now hear my out. I know many people hate speeches and such, but it gives me a sense of peace. It's like I'm learning to approach new people by talking infront of a whole crowd and explaining concepts to them that even I don't fully understand. (Just Kidding.)"
+  },
+  {
+    name: 'Googling...',
+    desc: "Googling... What else can I say?"
+  },
+  {
+    name: 'Reading Books',
+    desc: 'Kind of a book worm. Read Moby Dick(like every other person who claims to read). But seriously, give me credit for reading the entire Wimpy Kid Series.'
+  },
+  {
+    name: 'Leading',
+    desc: "I love leadership. I love to guide people and have incredible qualities. In fact, I was head of the student council at my school after just 2 months of joining my school. Yeah, big flex."
+  },
+  {
+    name: 'Gaming',
+    desc: "I mean, you expected this eh? Who doesn't play games? I play Fortni- I mean Call Of Duty, Valorant, Minecraft & other games."
+  },
+  {
+    name: 'Tech',
+    desc: "I'm basically that guy you know that you go to for advice whenever you wanna buy a new laptop or pc or mobile or anything tech related honestly, I have every gpu memorized from NVIDIA, AMD & *cough* Intel",
+  }
+]
 interface ProjectsProps {
   name: string,
   desc: string,
@@ -216,6 +274,22 @@ const Projects: ProjectsProps[] = [
       github: null,
     }
   },
+  {
+    name: 'RickyGPT',
+    desc: "A WIP ChatGPT-Arduino Robot Integration",
+    skills: [
+      { skill: 'Node.JS', link: 'https://en.wikipedia.org/wiki/Node.js' },
+      { skill: 'MongoDB', link: 'https://en.wikipedia.org/wiki/MongoDB' },
+      { skill: 'Express.JS', link: 'https://en.wikipedia.org/wiki/Express.js' },
+      { skill: 'Arduino', link: 'https://en.wikipedia.org/wiki/Arduino' },
+    ],
+    socials: {
+      discord: null,
+      instagram: null,
+      website: null,
+      github: 'https://github.com/GrabYourServices/RickyGPT',
+    }
+  },
 ]
 export default function Home() {
   return (
@@ -240,6 +314,18 @@ export default function Home() {
       <div className="flex bg-primary min-h-screen flex-col w-9/12 md:w-full">
         <div>
           <div className="flex bg-transparent items-center md:justify-center flex-row mt-20 md:mt-12  ">
+              <p className="text-specialColor text-5xl fixed font-mainFontB bg-black pr-2 ml-2 pl-2 absolute md:relative md:text-center">About Me</p>
+              <div className="w-full bg-specialColor mr-8 md:hidden" style={{height:'4px', borderRadius:'9999px'}}></div>
+          </div>
+          <div className="flex mt-12 flex-row justify-center items-stretch md:items-center md:mt-0 flex-wrap md:flex-col">
+            <div className="flex-2 w-11/12 md:w-5/6 bg-tertiary border-2 rounded m-4 border-specialColor p-4 flex flex-col">
+              <h1 className="text-specialColor text-4xl font-mainFontB md:text-center">A Kid, watching as the world kills itself.</h1>
+              <h1 className="text-textPrimary text-lg font-mainFontB md:text-center">Yo, I'm Ateeb. Or whatever you know me by. Before you call me "emo" because of the subheading, I honestly think that the world's killing itself cause... pollution and some stuff. Also I'm a huge Veronica Roth fan.<br/>When I was 9 years old. I met "Ashish" on Minecraft. Now, I was a literal child, however Ashish soon became my mentor. He introduced me to programming. He told me about Modpacks in Minecraft, I didn't like it, so I chose discord bots instead.<br/>However, my first ever project was a website I made for my sister in plain HTML/CSS. It was like your friendly pizzarias trash website made just by typing text. Nothing more, nothing less.<br/>I met many people along the way, like a friend Brittany, who encouraged me to push forward and persue programming. Skybird2333, who became my mentor after I lost touch with Ashish. He taught me different strategies and made me an actually good Programmer(He also forced me to use Typescript, which I hated. But I use it everyday now. So shoutout to skybird2333). I also met Jamikin, another friend who encouraged me and pushed me forward. I also met some incredible people in person.<br/>All these people made me who I'm today and I'm grateful for all of them. Right now, I'm 15 and know how to work in a lot of languages with ease. Well, now if you look down, you'll see my projects and my interests. So enjoy, and have a good life!</h1>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex bg-transparent items-center md:justify-center flex-row mt-20 md:mt-12  ">
               <p className="text-specialColor text-5xl fixed font-mainFontB bg-black pr-2 ml-2 pl-2 absolute md:relative md:text-center">Projects</p>
               <div className="w-full bg-specialColor mr-8 md:hidden" style={{height:'4px', borderRadius:'9999px'}}></div>
           </div>
@@ -249,6 +335,22 @@ export default function Home() {
             ))}
           </div>
         </div>
+        <div>
+          <div className="flex bg-transparent items-center md:justify-center flex-row mt-20 md:mt-12  ">
+              <p className="text-specialColor text-5xl fixed font-mainFontB bg-black pr-2 ml-2 pl-2 absolute md:relative md:text-center">Interests</p>
+              <div className="w-full bg-specialColor mr-8 md:hidden" style={{height:'4px', borderRadius:'9999px'}}></div>
+          </div>
+          <div className="flex mt-12 flex-row justify-center items-stretch md:items-center md:mt-0 flex-wrap md:flex-col">
+            {Interests.map((interest, index) => (
+              <InterestComponent name={interest.name} desc={interest.desc} key={index}/>
+            ))}
+          </div>
+        </div>
+          <div className="flex mt-4 flex-row justify-center items-stretch md:items-center md:mt-0 flex-wrap md:flex-col">
+            <div className="flex-2 w-11/12 md:w-5/6 bg-tertiary border-2 rounded m-4 border-specialColor p-4 flex flex-col">
+              <h1 className="text-textPrimary text-lg font-mainFontB md:text-center">Made this myself. Pretty cool innit? No copyright. Get in touch via <a className="text-specialColor" href="https://instagram.com/ateebthepro">Instagram</a> or <a className="text-specialColor" href="https://discord.com/users/820535075178938368">Discord</a>. I dont use facebook, so you'll get ghosted.</h1>
+            </div>
+          </div>
       </div>
     </div>
   )
