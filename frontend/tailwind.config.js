@@ -19,8 +19,8 @@ module.exports = {
         tertiary: '#222222',
         textPrimary: '#ffffff',
         textSecondary: '#f1f1f1',
-        textTertiary: '#d1d1d1',
-        specialColor: '#d2fff6'
+        textTertiary: '#C4A48F ',
+        specialColor: '#C4A48F  '
       }
     },
     screens: {
